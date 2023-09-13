@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif !important;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html,body {
+  height: 100%;
+}
+
+header {
+  height: 100%;
+  background-color: rgb(29, 31, 32);
+}
+
+.title-container {
+  h1 {
+    color: rgb(26, 188, 145);
+    font-size: 38px;
+  }
+
+  p {
+    color: white;
+  }
+}
+
+.form-container {
+  form {
+    input {
+      background-color: rgb(53, 57, 59);
+      border: none;
+      outline: none;
+      padding: 11px 10px;
+      &:focus {
+        outline: 2px solid rgb(26, 188, 145);
+      }
+    }
+
+    button {
+      border: none;
+      outline: none;
+      background-color: rgb(26, 188, 145);
+      color: black;
+      padding: 11px;
+      transition: .3s;
+      &:hover {
+        background-color: rgb(15, 232, 174);
+        color: black;
+        box-shadow: 0 0 15px rgba(15, 232, 174, 0.361);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .title-container {
+    h1 {
+      font-size: 32px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+}
